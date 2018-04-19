@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" type="text/css" href="../css/weather.css">
     <script src="../js/weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 
 </head>
 <body>
@@ -17,8 +19,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- The form -->
-<form class="example" action="" onsubmit="return check_form();">
-    <input type="text" placeholder="Search.." name="searchInput">
+<form class="example" action="" onsubmit="return gettingJSON();">
+    <input type="text" placeholder="Search.." name="searchInput" id="searche">
     <button type="submit"><i class="fa fa-search"></i></button>
     <p id="search"></p>
 
@@ -26,3 +28,4 @@
 
 </body>
 </html>
+
