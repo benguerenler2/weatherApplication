@@ -4,11 +4,15 @@
 
 
 function check_form() {
-    //document.getElementById("search").innerHTML = "";
+    //document.getElementById("search").innerHTML = London;
 
     //Get the input and store it in the var
     var search = document.getElementById("searchInput").value;
-    gettingJSON();
+    newElement();
+
+    //gettingJSON();
+
+
     //TO:DO use the search for the get the weather with API
 }
 
@@ -17,7 +21,7 @@ function gettingJSON(){
     $.getJSON("http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=4ba63d16825755a279cabc0a923b7b0d&units=metric",function(json){
        // document.write(JSON.stringify(json.main.temp));
         //send the data json to new function
-        gotData(json);
+      gotData(json);
     });
 }
 
@@ -38,6 +42,30 @@ function gotData(data) {
 
       document.write( weathers[3].date.toString());
 
+}
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("searche").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+        alert("You must write something!");
+    } else {
+        document.getElementById("weatherList").appendChild(li);
+    }
+    document.getElementById("searche").value = "";
 
-    return weathers;
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
 }
