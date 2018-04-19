@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Weather Application</title>
 
     <link rel="stylesheet" type="text/css" href="../css/weather.css">
@@ -13,19 +15,26 @@
 <body>
 
 <h1>My Weather Application</h1>
-<p>You can search here.</p>
+<p id="title">You can search here.</p>
 
 <!-- Load icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- The form -->
-<form class="example" action="" onsubmit="return gettingJSON();">
+<form class="example" action="" onsubmit="return check_form();">
     <input type="text" placeholder="Search.." name="searchInput" id="searche">
     <button type="submit"><i class="fa fa-search"></i></button>
-    <p id="search"></p>
-
 </form>
 
+<div>
+<ul id="weatherList">
+    <li>Hit the gym</li>
+    <li>Meet George</li>
+    <li>Buy eggs</li>
+    <li>Read a book</li>
+    <li>Organize office</li>
+</ul>
+</div>
 </body>
 </html>
 
