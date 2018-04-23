@@ -1,56 +1,48 @@
-// Create a "close" button and append it to each list item
-//var myNodelist = document.getElementsByTagName("LI");
-
 
 
 // Create a new list item when clicking on the "Search" button
-//TO:DO for loop and list all of them.
 function newElement(forecast) {
-    //var forecast;
-    //forecast = gettingJSON();
-
         for (var i = 0; i < 5; i++) {
             var li = document.createElement("li");
-            var imageSource= "https://openweathermap.org/img/w/" + forecast[i].image.toString() + ".png";
-            var t = document.createTextNode(forecast[i].date.toString() + " " + forecast[i].temperature.toString() + " " + forecast[i].text.toString() + " " + imageSource );
-            li.appendChild(t);
-            document.getElementById("myUL").appendChild(li);
-            document.getElementById("myInput").value = "";
-            //var span = document.createElement("SPAN");
-           // var txt = document.createTextNode("\u00D7");
-           // span.className = "close";
-            //span.appendChild(txt);
+            var iconurl = "https://openweathermap.org/img/w/" + forecast[i].image.toString() + ".png";
+            //var img =   $("#lists").html('<img src="http://openweathermap.org/img/w/' + forecast[i].image + '.png">');
 
 
+            if (i == 0) {
+                var t = document.createTextNode("Date: " + forecast[i].date.toString().substring(8, 10)
+                    + "/" + forecast[i].date.toString().substring(5, 7) + " "
+                    + "Current Temperature: " + forecast[i].temperature.toString() + " "
+                    + "Maximum: " + forecast[i].temperature_max.toString() + " "
+                    + "Minimum:  " + forecast[i].temperature_min.toString() + " "
+                    + "Description: " + forecast[i].text.toString() + " ");
+                li.appendChild(t);
+                document.getElementById("myUL").appendChild(li);
+                document.getElementById("myInput").value = "";
+                
+
+            }
+            else {
+                var t = document.createTextNode("Date: " + forecast[i].date.toString().substring(8, 10)
+                    + "/" + forecast[i].date.toString().substring(5, 7) + " "
+                    + "Maximum: " + forecast[i].temperature_max.toString() + " "
+                    + "Minimum:  " + forecast[i].temperature_min.toString() + " "
+                    + "Description: " + forecast[i].text.toString() + " ");
+                li.appendChild(t);
+                document.getElementById("myUL").appendChild(li);
+                document.getElementById("myInput").value = "";
+            }
         }
-
-    //var inputValue = document.getElementById("myInput").value;
-    //
-    //var t = document.createTextNode(inputValue);
-    /*
-    if (inputValue === '') {
-        alert("You must write something!");
-    } else {
     }
-
-
-
-    for (i = 0; i < close.length; i++) {
-        close[i].onclick = function() {
-            var div = this.parentElement;
-            div.style.display = "none";
-        }
-    }
-    */
-}
 
 function gettingJSON(){
     var city = document.getElementById("myInput").value;
-    $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q="+city +"&appid=4ba63d16825755a279cabc0a923b7b0d&units=metric",function(json){
-     // var weatherData = [];
-     gotData(json);
-         //document.write( weatherData[0].temperature.toString());
-    });
+    if (city === '') {
+        alert("You must write something!");
+    } else {
+        $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=4ba63d16825755a279cabc0a923b7b0d&units=metric", function (json) {
+            gotData(json);
+        });
+    }
 }
 
 function gotData(data) {
@@ -61,6 +53,8 @@ function gotData(data) {
     {
         weathers.push({
             temperature: weather.list[i].main.temp,
+            temperature_max: weather.list[i].main.temp_min,
+            temperature_min: weather.list[i].main.temp_max,
             text: weather.list[i].weather[0].description,
             image: weather.list[i].weather[0].icon,
             date: weather.list[i].dt_txt}
