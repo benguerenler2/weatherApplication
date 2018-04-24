@@ -2,11 +2,11 @@
 
 // Create a new list item when clicking on the "Search" button
 function newElement(forecast) {
+        $("ul").empty();
         for (var i = 0; i < 5; i++) {
             var li = document.createElement("li");
             var iconurl = "https://openweathermap.org/img/w/" + forecast[i].image.toString() + ".png";
-            //var img =   $("#lists").html('<img src="http://openweathermap.org/img/w/' + forecast[i].image + '.png">');
-
+            //var img =   $("#icons").html('<img src="http://openweathermap.org/img/w/' + forecast[i].image + '.png">');
 
             if (i == 0) {
                 var t = document.createTextNode("Date: " + forecast[i].date.toString().substring(8, 10)
@@ -15,7 +15,12 @@ function newElement(forecast) {
                     + "Maximum: " + forecast[i].temperature_max.toString() + " "
                     + "Minimum:  " + forecast[i].temperature_min.toString() + " "
                     + "Description: " + forecast[i].text.toString() + " ");
+                var img = document.createElement("img");
+                img.src=iconurl;
+                img.width=50;
+                img.height=50;
                 li.appendChild(t);
+                li.appendChild(img);
                 document.getElementById("myUL").appendChild(li);
                 document.getElementById("myInput").value = "";
                 
@@ -27,13 +32,18 @@ function newElement(forecast) {
                     + "Maximum: " + forecast[i].temperature_max.toString() + " "
                     + "Minimum:  " + forecast[i].temperature_min.toString() + " "
                     + "Description: " + forecast[i].text.toString() + " ");
+                var img = document.createElement("img");
+                img.src=iconurl;
+                img.width=50;
+                img.height=50;
                 li.appendChild(t);
+                li.appendChild(img);
                 document.getElementById("myUL").appendChild(li);
                 document.getElementById("myInput").value = "";
             }
         }
     }
-
+//Getting data from openweather api
 function gettingJSON(){
     var city = document.getElementById("myInput").value;
     if (city === '') {
@@ -44,7 +54,7 @@ function gettingJSON(){
         });
     }
 }
-
+//Get the data from api and put them on the array to use it after.
 function gotData(data) {
 
     var weather = data;
@@ -55,14 +65,11 @@ function gotData(data) {
             temperature: weather.list[i].main.temp,
             temperature_max: weather.list[i].main.temp_min,
             temperature_min: weather.list[i].main.temp_max,
-            text: weather.list[i].weather[0].description,
+            text: weather.list[i].weather[0].main,
             image: weather.list[i].weather[0].icon,
             date: weather.list[i].dt_txt}
         )
-          // document.write( weathers[i].image.toString());
     }
-
-    // document.write( weathers.toString());
-    //return weathers;
     newElement(weathers);
 }
+
