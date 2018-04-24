@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="02e2b7e8-7a25-4088-a454-de16bce5937d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< Updated upstream
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/weatherstyle.css" afterPath="$PROJECT_DIR$/css/weatherstyle.css" />
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/weather2.html" afterPath="$PROJECT_DIR$/html/weather2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/weather2.js" afterPath="$PROJECT_DIR$/js/weather2.js" />
+=======
+>>>>>>> Stashed changes
     </list>
     <ignored path="weatherApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,9 +35,23 @@
       <file leaf-file-name="weather2.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/weather2.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="30">
               <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
               <folding />
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="1095">
+              <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+=======
+            <state relative-caret-position="-321">
+              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+              <folding />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -323,10 +343,21 @@
       <workItem from="1523816309009" duration="4216000" />
       <workItem from="1523875204868" duration="3122000" />
       <workItem from="1524046614922" duration="7974000" />
+<<<<<<< Updated upstream
       <workItem from="1524138459769" duration="10520000" />
       <workItem from="1524220746596" duration="190000" />
       <workItem from="1524221455694" duration="1231000" />
       <workItem from="1524507812974" duration="4572000" />
+=======
+<<<<<<< Updated upstream
+      <workItem from="1524138459769" duration="10401000" />
+=======
+      <workItem from="1524138459769" duration="10520000" />
+      <workItem from="1524220746596" duration="190000" />
+      <workItem from="1524221455694" duration="1231000" />
+      <workItem from="1524507812974" duration="4603000" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1524175898035</created>
@@ -335,6 +366,7 @@
       <option name="project" value="LOCAL" />
       <updated>1524175898035</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00002" summary="changes list showed without design">
       <created>1524180289628</created>
       <option name="number" value="00002" />
@@ -347,6 +379,35 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="47709000" />
+=======
+<<<<<<< Updated upstream
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="41597000" />
+=======
+    <task id="LOCAL-00002" summary="changes list showed without design">
+      <created>1524180289628</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524180289628</updated>
+    </task>
+    <task id="LOCAL-00003" summary="changes list showed without design">
+      <created>1524523002834</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524523002835</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="47740000" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -369,7 +430,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+<<<<<<< Updated upstream
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35817307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< Updated upstream
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35903615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35903615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -771,9 +840,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/weather2.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="30">
           <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
           <folding />
+=======
+<<<<<<< Updated upstream
+        <state relative-caret-position="1095">
+          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="-321">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+          <folding />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
